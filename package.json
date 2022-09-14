@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "dev": "nodemon server"
   },
   "author": "Dave Gray",
@@ -17,6 +18,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
