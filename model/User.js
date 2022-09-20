@@ -23,6 +23,10 @@ const userSchema = new Schema({
       type: Number,
       default: 0,
     },
+    winPercentage: {
+      type: Number,
+      default: 0,
+    },
     wins: {
       type: Number,
       default: 0,
@@ -42,6 +46,7 @@ const userSchema = new Schema({
     bestTimeToWin: Number,
   },
   refreshToken: String,
+  dateCreated: String,
 });
 
 module.exports = mongoose.model("User", userSchema);

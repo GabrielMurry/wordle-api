@@ -20,6 +20,7 @@ const handleNewUser = async (req, res) => {
     const result = await User.create({
       username: user,
       password: hashedPwd,
+      dateCreated: new Date(),
     });
 
     console.log(result);

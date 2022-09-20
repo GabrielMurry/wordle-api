@@ -1,7 +1,7 @@
 {
-  "name": "wordle-backend",
+  "name": "wordle-mern-backend",
   "version": "1.0.0",
-  "description": "Express tutorial",
+  "description": "Backend and api for wordle MERN project",
   "main": "server.js",
   "scripts": {
     "start": "node server",
