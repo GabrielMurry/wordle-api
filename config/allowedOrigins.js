@@ -1,5 +1,5 @@
-const allowedOrigins = ["https://wordle-mern.onrender.com"];
+const allowedOrigins = ["https://wordle-mern.onrender.com"]; // allowing access for front-end
 // "http://localhost:3000", for testing
-// "https://wordle-clone-mern.onrender.com" for deployment
+// "https://wordle-mern.onrender.com" for deployment
 
 module.exports = allowedOrigins;

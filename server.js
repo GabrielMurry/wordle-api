@@ -45,6 +45,7 @@ app.use("/auth", require("./routes/auth"));
 app.use("/refresh", require("./routes/refresh"));
 app.use("/update", require("./routes/update"));
 app.use("/statistics", require("./routes/statistics"));
+app.use("/users", require("./routes/users"));
 app.use("/logout", require("./routes/logout"));
 
 app.use(verifyJWT);

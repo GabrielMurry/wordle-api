@@ -36,14 +36,24 @@ const userSchema = new Schema({
       default: 0,
     },
     winLossHistory: [Boolean],
-    winStreak: {
+    currentWinStreak: {
+      type: Number,
+      default: 0,
+    },
+    longestWinStreak: {
       type: Number,
       default: 0,
     },
     rowWon: [Number],
     secondsToWinHistory: [Number],
-    averageTimeToWin: Number,
-    bestTimeToWin: Number,
+    averageTimeToWin: {
+      type: Number,
+      default: null,
+    },
+    bestTimeToWin: {
+      type: Number,
+      default: null,
+    },
   },
   refreshToken: String,
   dateCreated: String,
