@@ -65,7 +65,7 @@ const handleUpdateStats = async (req, res) => {
           }
         );
       }
-      // updating average win time
+      // updating average win time.
       // seconds of game just played used as initial value since timeWinArr is of previous games
       let sum = seconds;
       for (let i = 0; i < timeWinArr.length; i++) {
