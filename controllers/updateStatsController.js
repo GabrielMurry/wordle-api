@@ -2,7 +2,7 @@ const User = require("../model/User");
 
 const handleUpdateStats = async (req, res) => {
   const { user, win, loss, guessRow, time } = req.body;
-  const name = JSON.parse(user);
+  const name = JSON.parse(user); // JSON.parse not necessary?
   const row = JSON.parse(guessRow);
   const seconds = JSON.parse(time);
   let currentWinStreak;
